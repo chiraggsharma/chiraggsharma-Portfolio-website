@@ -1,0 +1,403 @@
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+}
+
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Banner Area */ 
+
+.site-main .site-banner {
+    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 20%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 4rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 5% 0;
+    width: 22rem;
+    height: 34rem;
+    margin-left: 0%;
+    border-radius: 95px;
+}
+
+/* End Banner Area */ 
+
+/* start navigation */ 
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0rem 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 700 15px/2px var(--lato);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+    letter-spacing: 1px;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 1px;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* end navigation */ 
+
+
+
+/* Start About Area */ 
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--lato);
+    letter-spacing: 4px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+/* End About Area */ 
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+
+#skills{
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-wrap {
+    background: #f2f3f5;
+}
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #0563bb;
+}
+
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+#resume{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #e2dedd78;
+}
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+}
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+}
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #0563bb;
+}
+
+
+/* Project Area */ 
+
+.site-main .project-area{
+    padding-top: 0rem;
+    padding-bottom: rem;
+}
+
+.site-main .project-area .project-title{
+    padding: 0 5rem;
+}
+
+.site-main > .project-area .project{
+    background: white;
+    padding: 0rem 0;
+    margin: 0rem 0rem;
+    transition: box-shadow .7s ease;
+    border-radius: 10px; 
+    box-shadow: 0px 10px 5px rgba(57, 56, 61, 0.205);
+}
+
+.site-main > .project-area .project:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.site-main .project .project-img > img{
+    width: 130px;
+    height: 130px;
+}
+
+.ul-project-seperator{
+    background: #0966e5;
+    width: 50px;
+    height: 3px;
+    margin: 10px auto 10px;
+}
+
+/* End Project Area */ 
+
+
+/* Contact me */ 
+
+#contact{
+padding-top: 5rem;
+padding-bottom: 10rem;
+}
+.site-main .contact-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .contact-area .contact-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--lato);
+    letter-spacing: 4px;
+}
+
+.site-main .contact-area .contact-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+.site-main .contact-us-area{
+    background: url(../img/banner/Contact-us-bg.jpg) no-repeat;
+    padding: 10rem 0;
+    margin: 0 auto;
+}
+
+.site-main .contact-us-area .contact .contact-title h4{
+    font: normal 700 30px/ 30px var(--lato);
+    color: whitesmoke;
+}
+
+.site-main .contact-us-area .contact .contact-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+.site-main .contact-us-area .contact form{
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    color: white;
+    font: normal 500 18px/20px var(--lato);
+    border: 1px solid #e6f2ff;
+    border-radius: 5px;
+}
+.site-main .contact-us-area .contact form .input-textbox input{
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px/20px var(--lato);
+}
+
+.site-main .contact-us-area .contact form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+.site-main .contact-us-area .contact form .btn-submit button{
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
+}
+
+/* End Contact me */ 
+
+
+/* Footer Area */ 
+
+footer.footer-area{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-image: url(../img/banner/footer-bg.jpg);
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--lato);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: whitesmoke;
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+footer.footer-area .social .fa-instagram:hover{
+    color: #E85542;
+}
+
+footer.footer-area .social .fa-github:hover{
+    color: #24292E;
+}
+
+footer.footer-area .social .fa-linkedin:hover{
+    color: #0A66C2;
+}
+
+footer .footer-para{
+    color: white;
+    font: normal 500 20px/ 25px var(--lato);
+}
+.ul-footer-seperator{
+    background: white;
+    width: 30%;
+    height: 2px;
+    margin: 10px auto 10px;
+}
+footer .address{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.copyright{
+    color: #fff;
+    text-align: center;
+}
+/* End Footer */ 
