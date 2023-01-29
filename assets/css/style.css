@@ -9,7 +9,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
 }
 
-
+body {
+    /*background-color: #000;*/
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -66,7 +68,7 @@ section {
 }
 
 .site-main .site-banner .site-title h3{
-    padding-top: 20%;
+    /* padding-top: 20%; */
     font-weight: 500;
 }
 
@@ -90,9 +92,9 @@ section {
 
 /* start navigation */ 
 
-.header_area .main-menu .navbar .navbar-brand{
+/* .header_area .main-menu .navbar .navbar-brand{
     padding: 0rem 2rem 0 5rem;
-}
+} */
 
 .header_area .main-menu .navbar{
     padding: 1rem 20rem ;
